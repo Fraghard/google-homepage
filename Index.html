@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+        <title>Google</title>
+        <style>
+            body {
+                width: auto;
+                height: auto;
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;                
+                }
+            li a {
+                display: block;
+                width: 60px;
+                text-decoration: none;
+                color: black;
+                font-family: arial, sans-serif;
+                font-size: 13px;
+                text-decoration-thickness: auto;
+                opacity: 0.75;
+                padding: 13px 0px;
+                text-align: center;
+                }
+            li {
+                float: left;                
+            }  
+            .Gmail, .App, .Images, .Sign {
+                float: right;
+            }  
+            .About {
+                margin-left: 10px;
+            }
+            .Sign-In {
+                color: rgb(255, 255, 255) !important;
+                background-color: rgba(42, 134, 240, 0.952);
+                font-weight: 900;
+                padding: 8px 5px;
+                border-radius: 4%;
+                opacity: 1;
+                margin: 1px;
+            }
+            .Sign {
+                padding-top: 7px ;
+                padding-right: 20px;
+                margin-left: -20px;
+                margin-right: 5px;
+            }
+            .App {
+                padding-top: 10px;
+                padding-left: 5px;
+                margin-left: 2px;
+            }                
+            li a:hover {
+                text-decoration: underline;
+            }
+            #Logo {
+                width: 100%;
+            }
+            .fp-logo {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 6%
+            }
+            footer {
+                background-color: rgba(95, 99, 104, 0.11);
+                display: block;
+                width: 100%;
+                position: fixed;
+                bottom: 0;
+                height: 40px;
+                border: solid 1px rgba(128, 128, 128, 0.096);
+                margin-left: -9px;
+                padding-left: 27px;
+            }
+            .left-footer {
+                float: left;
+                margin-left: 20px;
+            }
+            .right-footer {
+                float: right;
+                margin-right: 35px;
+            }
+            .HSW, .Busi, .Advert {
+                padding-left: 2px;
+                padding-right: 27px;
+                white-space: nowrap;
+                font-size: 14px;
+                color: rgba(0, 0, 0, 0.836)
+            }
+            #HSW {
+                width: 200px;
+            }
+            .Privacy, .Terms, .Settings {
+                font-size: 14px;
+                padding-left: 10px;
+                color: rgba(0, 0, 0, 0.836)
+            }
+            #voice {
+                background-size: 24px;
+            }
+            #google-search {
+                width: 520px;
+                border: none;
+            }
+            .text-field {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                align-items: center;
+                border: solid 1px rgba(128, 128, 128, 0.363);
+                border-radius: 10rem;
+                width: 600px;
+                height: 45px;
+                margin-top: 25px;
+                margin-bottom: 25px;
+            }
+            .lg-bt {
+                width: auto;
+                display: flex;
+                flex-flow:column wrap;
+                justify-content: center;
+                align-items: center;
+            }
+            .material-icons {
+                opacity: 0.3;
+            }
+            #gsb, #ifl {
+                color: #5F6368;
+                border-radius: 4px;
+                font-family: arial,sans-serif;
+                font-size: 14px;
+                line-height: 27px;
+                margin: 11px 4px;
+                padding: 0 16px;
+                line-height: 27px;
+                height: 36px;
+                min-width: 54px;
+                text-align: center;
+                cursor: pointer;
+                user-select: none;
+                background-color: rgb(242, 242, 242);
+                background-image: -webkit-linear-gradient(rgb(245, 245, 245), rgb(241, 241, 241));
+                border-bottom-left-radius: 4px;
+                border-bottom-right-radius: 4px;
+                border-bottom-style: solid;
+                border-bottom-width: 1px;
+                border-image-outset: 0;
+                border-image-repeat: stretch;
+                border-image-slice: 100%;
+                border-image-source: none;
+                border-image-width: 1;
+                border-left-color: rgb(242, 242, 242);
+                border-left-style: solid;
+                border-left-width: 1px;
+                border-right-color: rgb(242, 242, 242);
+                border-right-style: solid;
+                border-right-width: 1px;
+                border-top-color: rgb(242, 242, 242);
+                border-top-left-radius: 4px;
+                border-top-right-radius: 4px;
+                border-top-style: solid;
+                border-top-width: 1px;
+            }
+            div.buttons input[type="submit"]:hover {
+                box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+                background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+                background-color: #f8f8f8;
+                border: 1px solid #c6c6c6;
+                color: #222;
+            }
+        </style>
+
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li class="About"><a href="#about">About</a></li>
+                <li class="Store"><a href="#store">Store</a></li>
+                <li class="Sign"><a class="Sign-In" href="#Sign in">Sign in</a></li>
+                <li class="App"><span class="material-icons">apps</span><a href="#Apps"></a></li>
+                <li class="Images"><a href="#Images">Images</a></li>
+                <li class="Gmail"><a href="#Gmail">Gmail</a></li>
+            </ul>
+        </nav>
+            <div id="Logo">
+                <img class="fp-logo" src="./Images/googlelogo_color_272x92dp.png">
+            </div>
+        <div class="lg-bt">
+            <div class="text-field">
+                <form>
+                    <label for="google-search-bar"></label>
+                    <i class="material-icons">search</i>
+                    <input type="text" name="google-search-bar" id="google-search"><img id="voice" src="./Images/1200px-Google_mic.svg.png" width="14px" height="20px">
+                </form>
+            </div>  
+            <div class="buttons">
+                <form>
+                    <label for="gsb"></label>
+                    <input type="submit" value="Google Search" id="gsb">
+                    <label for="ifl"></label>
+                    <input type="submit" value="I'm Feeling Lucky" id="ifl">
+                </form> 
+            </div>
+        </content> 
+    </body>
+    <footer>
+        <ul class="left-footer">
+            <li><a class="Advert" href="#Advert">Advertising</a></li>
+            <li><a class="Busi" href="#Busi">Business</a></li>
+            <li id="HSW"><a class="HSW" href="#HSW">How Search works</a></li>
+        </ul>
+        <ul class="right-footer">
+            <li><a class="Privacy" href="#Privacy">Privacy</a></li>
+            <li><a class="Terms" href="#Terms">Terms</a></li>
+            <li><a class="Settings" href="#Settings">Settings</a></li>
+        </ul>
+    </footer>
+
+</html>
